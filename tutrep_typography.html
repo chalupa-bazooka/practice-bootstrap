@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BS5 Headings</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <!--HEADERS-->
+    <h1>Heading without classes</h1>
+    <h1 class="display-1">Heading with display-1</h1>
+    <h2 class="my-3">Fancy display heading
+        <small class="text-muted">With faded secondary text</small>
+    </h2>
+    <hr>
+
+    <!--PARAGRAPHS-->
+    <!--horizontal alignment-->
+    <div class="my-3">
+        <p class="text-start">text-start aligned me to the left</p>
+        <p class="text-center lead">text-center aligned me to the center (also I'm .lead)</p>
+        <p class="text-end">text-end aligned me to the right</p>
+    </div>
+    <hr>
+
+    <!--cases-->
+    <div class="my-3">
+        <p class="text-lowercase">This paragraph is lowercased!</p>
+        <p class="text-uppercase">This paragraph is uppercased!</p>
+        <p class="text-capitalize">This paragraph is capitalized!</p>
+    </div>
+    <hr>
+
+    <!--colors-->
+    <div class="my-3 text-center">
+        <p class="text-primary">Primary is blue</p>
+        <p class="text-secondary">Secondary is gray</p>
+        <p class="text-success">Success is green</p>
+        <p class="text-warning">Warning is yellow</p>
+        <p class="text-danger">Danger is red</p>
+        <p class="text-muted">Muted is gray too</p>
+    </div>
+    <hr>
+
+    <!--BLOCKQUOTE-->
+    <figure class="text-end my-3">
+        <blockquote class="blockquote">
+            <p>An outstandingly profound utterance is given here. Or not?</p>
+        </blockquote>
+        <figcaption class="blockquote-footer">by <cite>Joe Momma</cite></figcaption>
+    </figure>
+    <hr>
+
+    <!--TEXT FLOW-->
+    <!--truncation-->
+    <div class="row my-3">
+        <div class="col-2 text-truncate">This text is truncated at the col-2's end.</div>
+        <div class="col-3 text-truncate">This text is truncated at the col-4's end.</div>
+        <div class="col-4 text-truncate">This text is truncated at the col-3's end.</div>
+    </div>
+    <div>
+        <span class="d-inline-block text-truncate" style="max-width: 100px">This text is truncated at 100px.</span>
+        <span class="d-inline-block text-truncate" style="max-width: 200px">This text is truncated at 200px.</span>
+        <span class="d-inline-block text-truncate" style="max-width: 300px">This text is truncated at 300px.</span>
+    </div>
+    <hr>
+
+    <!--wrapping and overflow-->
+    <div class="text-center my-3">
+        <div class="bg-primary text-light text-wrap d-inline-block p-1" style="width: 10rem">this text wraps
+            because we've used .text-wrap</div>
+        <div class="bg-warning text-nowrap d-inline-block p-1" style="width: 10rem">this text overflows because we've
+            used .text-nowrap</div>
+    </div>
+    <!--wrapping long words-->
+    <div class="row">
+        <div class="col-2">
+            <p class="text-break">veryveryveryveryveryveryverylongwordincol-2</p>
+        </div>
+        <div class="col-3">
+            <p class="text-break">veryveryveryveryveryveryverylongwordincol-3</p>
+        </div>
+        <div class="col-4">
+            <p class="text-break">veryveryveryveryveryveryverylongwordincol-4</p>
+        </div>
+    </div>
+
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
