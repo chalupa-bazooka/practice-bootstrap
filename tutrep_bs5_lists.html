@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BS5 Lists Showcase (TutRep)</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container m-3">
+        <h1>Ok, so lists...</h1>
+        <!--lists unstyled-->
+        <div class="container my-3">
+            <div class="row">
+                <!--left 3 lists-->
+                <div class="col-6">
+                    <h3>Lists with .list-unstyled</h3>
+                    <!--list 1-->
+                    <ul class="list-unstyled">
+                        <li>Unordered item 1</li>
+                        <li>Unordered item 2</li>
+                        <li>Unordered item 3</li>
+                    </ul>
+                    <!--list 2-->
+                    <ol class="list-unstyled">
+                        <li>Ordered item 1</li>
+                        <li>Ordered item 2</li>
+                        <li>Ordered item 3</li>
+                    </ol>
+                    <!--list 3-->
+                    <ol class="list-unstyled">
+                        <li>Outer item 1</li>
+                        <li>Outer item 2</li>
+                        <ul>
+                            <li>Inner item 1</li>
+                            <li>Inner item 2</li>
+                        </ul>
+                        <li>Outer item 3</li>
+                        </ul>
+                </div>
+                <!--right 3 lists-->
+                <div class="col-6">
+                    <h3>Lists without .list-unstyled</h3>
+                    <!--list 1-->
+                    <ul>
+                        <li>Unordered item 1</li>
+                        <li>Unordered item 2</li>
+                        <li>Unordered item 3</li>
+                    </ul>
+                    <!--list 2-->
+                    <ol>
+                        <li>Ordered item 1</li>
+                        <li>Ordered item 2</li>
+                        <li>Ordered item 3</li>
+                    </ol>
+                    <!--list 3-->
+                    <ol>
+                        <li>Outer item 1</li>
+                        <li>Outer item 2</li>
+                        <ul>
+                            <li>Inner item 1</li>
+                            <li>Inner item 2</li>
+                        </ul>
+                        <li>Outer item 3</li>
+                        </ul>
+
+                </div>
+            </div>
+        </div>
+
+        <!--horizontal list-->
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-lg-3">
+                    <h3>Horizontal list</h3>
+                    <ul class="list-inline">
+                        <li class="list-inline-item">horizontal item 1</li>
+                        <li class="list-inline-item">horizontal item 2</li>
+                        <li>vertical item</li>
+                        <li class="list-inline-item">all following items will be vertical</li>
+                        <li class="list-inline-item">even with .list-inline-item</li>
+                        <li>like the previous 2 items above</li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <h3>Horizontal list 2</h3>
+                    <ul class="list-inline">
+                        <li class="list-inline-item">Home</li>
+                        <li class="list-inline-item">Catalog</li>
+                        <li class="list-inline-item">Contact</li>
+                        <li class="list-inline-item">About us</li>
+                    </ul>
+                    <p>This is a proper use of horizotal list. It's usually placed into nav to create the top menu.</p>
+                </div>
+                <div class="col-lg-6 my-sm-3 my-lg-0">
+                    <h3>Horizontal definition list</h3>
+                    <dl class="row">
+                        <dt class="col-sm-5">User Agent</dt>
+                        <dd class="col-sm-7">An HTML user agent is any device that interprets HTML documents.</dd>
+                        <dt class="col-sm-5">Client-side Scripting</dt>
+                        <dd class="col-sm-7">Client-side scripting generally refers to the category of computer programs
+                            on the web that are executed by the user's web browser.</dd>
+                        <dt class="col-sm-5">Document Tree</dt>
+                        <dd class="col-sm-7">The tree of elements encoded in the source document.</dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+
+        <!--list groups-->
+        <div class="container my-3">
+            <div class="row">
+                <!--UL list-group-->
+                <div class="col-sm-6 col-xl-4">
+                    <h3>List group with &lt;ul&gt;</h3>
+                    <p class="lead">Width is 75%</p>
+                    <ul class="list-group w-75">
+                        <li class="list-group-item active">Home (active)</li>
+                        <li class="list-group-item">Catalog</li>
+                        <li class="list-group-item">Contact</li>
+                        <li class="list-group-item disabled">About us (disabled)</li>
+                    </ul>
+                </div>
+                <!--UL list-group-flush-->
+                <div class="col-sm-6 col-xl-4">
+                    <h3>Edge-to-edge list group</h3>
+                    <p class="lead">With .list-group-flush</p>
+                    <ul class="list-group list-group-flush w-75">
+                        <li class="list-group-item">Home</li>
+                        <li class="list-group-item">Catalog</li>
+                        <li class="list-group-item">Contact</li>
+                        <li class="list-group-item">About us</li>
+                    </ul>
+                </div>
+                <!--OL list-group-numbered-->
+                <div class="col-sm-6 col-xl-4 my-sm-3 my-xl-0">
+                    <h3>List group with &lt;ol&gt;</h3>
+                    <p class="lead">With .list-group-numbered</p>
+                    <ol class="list-group list-group-numbered w-75">
+                        <li class="list-group-item ">Home</li>
+                        <li class="list-group-item">Catalog</li>
+                        <li class="list-group-item">Contact</li>
+                        <li class="list-group-item active">About us (active)</li>
+                    </ol>
+                </div>
+                <!--checkbox-->
+                <div class="col-sm-6 col-xl-4 my-3">
+                    <h3>List-group checkboxes</h3>
+                    <p class="lead">With .form-check-input</p>
+                    <div class="list-group w-75">
+                        <label for="input1" class="list-group-item">
+                            <input type="checkbox" class="form-check-input" name="input1" id="input1">
+                            Input 1
+                        </label>
+                        <label for="input2" class="list-group-item">
+                            <input type="checkbox" class="form-check-input" name="input2" id="input2">
+                            Input 2
+                        </label>
+                        <label for="input3" class="list-group-item">
+                            <input type="checkbox" class="form-check-input" name="input3" id="input3">
+                            Input 3
+                        </label>
+                    </div>
+                </div>
+                <!--radio-->
+                <div class="col-sm-6 col-xl-4 my-3">
+                    <h3>List-group radio</h3>
+                    <p class="lead">With .form-check-input</p>
+                    <div class="list-group w-75">
+                        <label for="input1" class="list-group-item">
+                            <input type="radio" class="form-check-input" name="input1" id="input1">
+                            Input 1
+                        </label>
+                        <label for="input2" class="list-group-item">
+                            <input type="radio" class="form-check-input" name="input2" id="input2">
+                            Input 2
+                        </label>
+                        <label for="input3" class="list-group-item">
+                            <input type="radio" class="form-check-input" name="input3" id="input3">
+                            Input 3
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--list group customized with d-flex-->
+        <div class="container my-3">
+            <div class="row">
+                <div class="col-7">
+                    <h3>List-group custoomized with d-flex</h3>
+                    <div class="list-group my-2">
+                        <a href="#" class="list-group-item list-group-item-action active">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h4>Asteroid detected near Earth</h4>
+                                <small>1 day left to live</small>
+                            </div>
+                            <p>Researchers have detected an asteroid of the size of a football field near earth. This
+                                asteroid does not pose any threat to the planet, but it is difficult to be tracked.</p>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h4>Scientists found massive black hole</h4>
+                                <small>12 hours left to live</small>
+                            </div>
+                            <p>Scientists have found an ultra-bright, supermassive black hole at the center of a distant galaxy, whose mass is about a million times that of our Sun.</p>
+
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h4>NASA launches a nuclear-powered rocket</h4>
+                                <small>1 hour left to live</small>
+                            </div>
+                            <p>NASA launched a Parker space probe in 2018 with the mission of making observations of the outer corona of the Sun. It is the first-ever mission to "touch" the Sun.</p>
+
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
