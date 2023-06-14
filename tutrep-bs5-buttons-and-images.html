@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BS5 Buttons & Images Showcase (TutRep)</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container m-3">
+        <h1>Buttons & Images</h1>
+        <p class="lead italic"><i>I hope it will suck less than forms...</i></p>
+
+        <!--buttons & button groups-->
+        <div class="row">
+
+            <!--buttons-->
+            <div class="col-6">
+                <h3>Buttons</h3>
+
+                <!--regular colors-->
+                <div>
+                    <h5>Regular colors</h5>
+                    <button class="btn btn-primary">Primary</button>
+                    <button class="btn btn-secondary">Secondary</button>
+                    <button class="btn btn-success">Success</button>
+                    <button class="btn btn-danger">Danger</button>
+                    <button class="btn btn-warning">Warning</button>
+                    <button class="btn btn-info">Info</button>
+                    <button class="btn btn-dark">Dark</button>
+                    <button class="btn btn-light">Light</button>
+                    <button class="btn btn-link">Link</button>
+                </div>
+
+                <!--outline colors-->
+                <div class="mt-3">
+                    <h5>Outline colors</h5>
+                    <button class="btn btn-outline-primary">Primary</button>
+                    <button class="btn btn-outline-secondary">Secondary</button>
+                    <button class="btn btn-outline-success">Success</button>
+                    <button class="btn btn-outline-danger">Danger</button>
+                    <button class="btn btn-outline-warning">Warning</button>
+                    <button class="btn btn-outline-info">Info</button>
+                    <button class="btn btn-outline-dark">Dark (there's also a Light button next to me but you can't see
+                        it)</button>
+                    <button class="btn btn-outline-light">Light</button>
+                </div>
+
+                <!--sizes-->
+                <div class="mt-3">
+                    <h5>Sizes</h5>
+                    <button class="btn btn-primary btn-lg">Large</button>
+                    <button class="btn btn-primary">Normal</button>
+                    <button class="btn btn-primary btn-sm">Small</button>
+                    <div class="d-grid mt-1">
+                        <button class="btn btn-primary">Grid button</button>
+                    </div>
+                </div>
+
+                <!--disabled-->
+                <div class="mt-3">
+                    <h5>Disabled</h5>
+                    <button class="btn btn-secondary" disabled>Disabled &lt;button&gt;</button>
+                    <a href="#" class="btn btn-secondary disabled">Disabled &lt;a&gt;</a>
+                </div>
+
+                <!--animations-->
+                <div class="mt-3">
+                    <h5>Spinner & grower</h5>
+                    <p><i>What the hell!</i></p>
+                    <button class="btn btn-success">
+                        <span class="spinner-border spinner-border-sm"></span>
+                        Spinner border
+                    </button>
+                    <button class="btn btn-success">
+                        <span class="spinner-grow spinner-grow-sm"></span>
+                        Spinner grow
+                    </button>
+                </div>
+
+            </div>
+
+            <!--button groups-->
+            <div class="col-6">
+                <h3>Button groups</h3>
+
+                <!--horizontal button group-->
+                <div>
+                    <h5>Horizontal</h5>
+                    <!--regular color-->
+                    <div class="btn-group">
+                        <button class="btn btn-primary" type="button">Button 1</button>
+                        <button class="btn btn-primary active" type="button">Button 2 (active)</button>
+                        <button class="btn btn-success" type="button">Button 3</button>
+                    </div>
+
+                    <!--outline color-->
+                    <div class="btn-group mt-2">
+                        <button class="btn btn-outline-primary" type="button">Button 1</button>
+                        <button class="btn btn-outline-warning active" type="button">Button 2 (active)</button>
+                        <button class="btn btn-outline-danger" type="button">Button 3</button>
+                    </div>
+
+                    <!--toolbar-->
+                    <div class="btn-toolbar mt-2">
+                        <div class="btn-group me-2">
+                            <button class="btn btn-primary">Boka</button>
+                            <button class="btn btn-primary">Zhoka</button>
+                        </div>
+                        <div class="btn-group me-2">
+                            <button class="btn btn-dark">Biba</button>
+                            <button class="btn btn-outline-dark">Boba</button>
+                        </div>
+                        <div class="btn-group">
+                            <button class="btn btn-danger">This is</button>
+                            <button class="btn btn-danger active">A toolbar</button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!--nested-->
+                <div class="mt-3">
+                    <h5>Nested button groups</h5>
+                    <div>
+                        <div class="btn-group">
+                            <a href="" class="btn btn-info">Button 1</a>
+                            <a href="" class="btn btn-info">Button 2</a>
+                            <div class="btn-group">
+                                <a href="" class="btn btn-info dropdown-toggle" data-bs-toggle="dropdown">Dropdown</a>
+                                <div class="dropdown-menu">
+                                    <a href="" class="dropdown-item">Option 1</a>
+                                    <a href="" class="dropdown-item">Option 2</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--vertical button grouo-->
+                <div class="mt-3">
+                    <h5>Vertical</h5>
+                    <div class="btn-group-vertical">
+                        <a href="" class="btn btn-success">Button 1</a>
+                        <a href="" class="btn btn-success">Button 2</a>
+                        <div class="btn-group">
+                            <a href="" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown">Dropdown</a>
+                            <div class="dropdown-menu">
+                                <a href="" class="dropdown-item">Option 1</a>
+                                <a href="" class="dropdown-item">Option 2</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--justified button group-->
+                <div class="mt-3">
+                    <h3>Justified</h3>
+                    <div class="btn-group d-flex">
+                        <button class="btn btn-outline-secondary">Button 1</button>
+                        <button class="btn btn-outline-secondary">Button 2</button>
+                        <button class="btn btn-outline-secondary">Button 3</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <hr>
+
+        <!--images-->
+        <div class="row mt-5">
+            <h3>Images</h3>
+
+            <!--image shape-->
+            <div>
+                <h5>Shape styling</h5>
+                <img class="rounded me-2" width="250px"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/New_born_Frisian_red_white_calf.jpg/1024px-New_born_Frisian_red_white_calf.jpg"
+                    alt="">
+                <img class="rounded-circle me-2" width="250px"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/New_born_Frisian_red_white_calf.jpg/1024px-New_born_Frisian_red_white_calf.jpg"
+                    alt="">
+                <img class="img-thumbnail" width="250px"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/New_born_Frisian_red_white_calf.jpg/1024px-New_born_Frisian_red_white_calf.jpg"
+                    alt="">
+            </div>
+
+            <!--responsiveness-->
+            <div class="row mt-3">
+                <h5>Responsiveness</h5>
+
+                <div class="col-4">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/New_born_Frisian_red_white_calf.jpg/1024px-New_born_Frisian_red_white_calf.jpg"
+                        alt="" class="img-fluid">
+                    col-4
+                </div>
+
+                <div class="col-6">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/New_born_Frisian_red_white_calf.jpg/1024px-New_born_Frisian_red_white_calf.jpg"
+                        alt="" class="img-fluid">
+                        col-6
+                </div>
+
+            </div>
+
+            <!--horizontal alignment-->
+            <div class="mt-3">
+                <h3>Horizontal alignment</h3>
+
+                <!--center-->
+                <div class="text-center">
+                    Text center
+                    <img width="250px"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Pot-bellied_pigs_in_Lisbon_Zoo_2008.jpg/1024px-Pot-bellied_pigs_in_Lisbon_Zoo_2008.jpg"
+                        alt="">
+                </div>
+
+                <!--start-->
+                <div class="text-start">
+                    Text start
+                    <img width="250px"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Pot-bellied_pigs_in_Lisbon_Zoo_2008.jpg/1024px-Pot-bellied_pigs_in_Lisbon_Zoo_2008.jpg"
+                        alt="">
+                </div>
+
+                <!--end-->
+                <div class="text-end">
+                    Text end
+                    <img width="250px"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Pot-bellied_pigs_in_Lisbon_Zoo_2008.jpg/1024px-Pot-bellied_pigs_in_Lisbon_Zoo_2008.jpg"
+                        alt="">
+                </div>
+
+                <!--float-->
+                <div>
+
+                    <!--float start-->
+                    <div class="float-start">
+                        Float start
+                        <img width="250px" 
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Pot-bellied_pigs_in_Lisbon_Zoo_2008.jpg/1024px-Pot-bellied_pigs_in_Lisbon_Zoo_2008.jpg"
+                            alt="">
+                    </div>
+
+                    <!--float end-->
+                    <div class="float-end">
+                        Float end
+                        <img width="250px" 
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Pot-bellied_pigs_in_Lisbon_Zoo_2008.jpg/1024px-Pot-bellied_pigs_in_Lisbon_Zoo_2008.jpg"
+                            alt="">
+                    </div>
+
+                </div>
+            
+            </div>
+
+            <!--mx-auto for a block image-->
+            <div>
+                <img width="250px" class="d-block mx-auto" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Pot-bellied_pigs_in_Lisbon_Zoo_2008.jpg/1024px-Pot-bellied_pigs_in_Lisbon_Zoo_2008.jpg" alt="">
+                <div class="text-center">
+                    mx-auto
+                </div>
+            </div>
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+    </div>
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
