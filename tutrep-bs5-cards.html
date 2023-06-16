@@ -16,6 +16,7 @@
         <h1>Cards</h1>
         <p class="lead italic"><i>I'd welcome a covenient way to add captions!</i></p>
 
+        <!--row 1-->
         <div class="container mt-2">
             <div class="row">
 
@@ -30,9 +31,10 @@
                             alt="">
 
                         <!--card body-->
-                        <div class="card-body text-start">
+                        <div class="card-body text-start text-white bg-secondary">
                             <h5 class="card-title">Rocket card</h5>
-                            <p class="card-text">Fly to space in a beautiful mighty rocket that knows no impediment.</p>
+                            <p class="card-text">Fly to space in a beautiful mighty rocket that knows no impediment 🚀
+                            </p>
                             <a href="#" class="btn btn-primary">Learn more</a>
                         </div>
 
@@ -42,7 +44,7 @@
                 <!--turkish card: col-4, no img, subtitle, links-->
                 <div class="col-4">
                     <h3>Header, footer, links</h3>
-                    <div class="card">
+                    <div class="card border-success">
                         <div class="card-header text-center text-muted"><small>History time</small></div>
                         <div class="card-body">
                             <h5 class="card-title">Turkiye, the mighty</h5>
@@ -56,10 +58,10 @@
                     </div>
                 </div>
 
-                <!--tabs, list group-->
+                <!--list card: tabs, list group-->
                 <div class="col-4">
                     <h3>Tabs, list group</h3>
-                    <div class="card">
+                    <div class="card text-white bg-warning">
 
                         <!--tab headers-->
                         <div class="card-header">
@@ -117,6 +119,160 @@
 
                     </div>
 
+                </div>
+
+            </div>
+        </div>
+
+        <!--row 2-->
+        <div class="container mt-2">
+            <h3>Row-cols, card groups</h3>
+            <div class="row row-cols-2 row-cols-md-3 g-4">
+
+                <!--card 1 / col 1-->
+                <div class="col">
+                    <div class="card">
+
+                        <!--hero image-->
+                        <img src="https://panzers.co.uk/wp-content/uploads/2021/06/1486.jpg" alt=""
+                            class="card-img top">
+
+                        <!--header, main-->
+                        <div class="card-body">
+                            <h5 class="card-title">Figs</h5>
+                            <p class="card-text">I love figs, they are delicious.</p>
+                        </div>
+
+                        <!--footer-->
+                        <div class="card-footer">
+                            <small class="text-muted">Hace 5 minutos</small>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!--card 2 / col 2-->
+                <div class="col">
+                    <div class="card">
+
+                        <!--hero image-->
+                        <img src="https://www.alimentaciosostenible.barcelona/sites/default/files/styles/large/public/2021-06/préssec-ok.jpg?itok=CHJ1TOWJ"
+                            alt="" class="card-img top">
+
+                        <!--header, main-->
+                        <div class="card-body">
+                            <h5 class="card-title">Peaches</h5>
+                            <p class="card-text">I love peaches too, they remind me of my cat Peaches.</p>
+                        </div>
+
+                        <!--footer-->
+                        <div class="card-footer">
+                            <small class="text-muted">Hace 8 minutos</small>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!--card 3 / col 3-->
+                <div class="col">
+                    <div class="card">
+
+                        <!--hero image-->
+                        <img src="https://cdn.shopify.com/s/files/1/0553/0701/0243/products/Tangerine-SpotlessFruitsIndia_1024x1024.png?v=1634193360"
+                            alt="" class="card-img top">
+
+                        <!--header, main-->
+                        <div class="card-body">
+                            <h5 class="card-title">Tangerine</h5>
+                            <p class="card-text">Living reflection of a dream.</p>
+                        </div>
+
+                        <!--footer-->
+                        <div class="card-footer">
+                            <small class="text-muted">Hace 10 minutos</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!--horrible experiment: 2 cards in 1 col-->
+                <div class="col">
+
+                    <!--card 1-->
+                    <div class="card">
+
+                        <!--header & text-->
+                        <div class="card-body">
+                            <h5 class="card-title">Let's see...</h5>
+                            <p class="card-text">How are these gonna arrange themselves, I wonder.</p>
+                        </div>
+
+                        <!--footer-->
+                        <div class="card-footer">
+                            <small class="text-muted">Hace un rato</small>
+                        </div>
+                    </div>
+
+                    <!--card 2-->
+                    <div class="card">
+
+                        <!--header, main-->
+                        <div class="card-body">
+                            <h5 class="card-title">Damn!</h5>
+                            <p class="card-text">Just like that? On top of each other? Cringe...</p>
+                        </div>
+
+                        <!--footer-->
+                        <div class="card-footer">
+                            <small class="text-muted">Hace nunca</small>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+
+        <!--row 3-->
+        <div class="container mt-2">
+            <h3>Custom layouts</h3>
+            <div class="row">
+
+                <!--horizontal card-->
+                <div class="col-6">
+                    <h3>Horizontal</h3>
+                    <div class="card">
+                        <div class="row g-0">
+
+                            <!--image-->
+                            <div class="col-sm-5">
+                                <img src="https://onesweetharmony.com/wp-content/uploads/2023/01/featured-image-8.jpg"
+                                    alt="" class="card-img-top h-100">
+                            </div>
+
+                            <!--texts-->
+                            <div class="col-sm-7">
+                                <div class="card-body">
+                                    <h5 class="card-title">Kürtöskalacz</h5>
+                                    <p class="card-text">Damn, I'd kill for it!</p>
+                                    <a href="" class="btn btn-primary stretched-link">I'm a useless button</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--image bacgkround card-->
+                <div class="col-6">
+                    <h3>Img bg</h3>
+                    <div class="card text-white" style="width:250px">
+                        <img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Kürtőskalács_2.jpg/250px-Kürtőskalács_2.jpg" alt="">
+                        <div class="card-img-overlay">
+                            <h5 class="card-title">Chimney cake</h5>
+                            <p class="card-text">This is its English name.</p>
+                            <a href="" class="btn btn-primary stretched-link">Want</a>
+                        </div>
+                    </div>
                 </div>
 
             </div>
