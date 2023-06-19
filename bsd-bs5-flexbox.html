@@ -16,6 +16,8 @@
     <div class="container m-2">
         <h1>Flexbox in BS5</h1>
         <div class="row">
+
+            <!--d-flex, orientation, justification, alignment-->
             <div class="col-6">
 
                 <!--d-flex & d-inline-flex-->
@@ -121,34 +123,38 @@
                     <h3>Alignment (y-axis)</h3>
                     <!--align-items-START-->
                     <div class="d-flex align-items-start" style="background-color: rgb(236, 198, 152); height: 3.5rem">
-                            <div class="p-2 me-2" style="background-color: bisque;">We are</div>
-                            <div class="p-2 me-2" style="background-color: bisque;">Align Items</div>
-                            <div class="p-2 me-2" style="background-color: bisque;">Start</div>
+                        <div class="p-2 me-2" style="background-color: bisque;">We are</div>
+                        <div class="p-2 me-2" style="background-color: bisque;">Align Items</div>
+                        <div class="p-2 me-2" style="background-color: bisque;">Start</div>
                     </div>
 
                     <!--align-items-END-->
-                    <div class="d-flex align-items-end mt-1" style="background-color: rgb(236, 198, 152); height: 3.5rem">
+                    <div class="d-flex align-items-end mt-1"
+                        style="background-color: rgb(236, 198, 152); height: 3.5rem">
                         <div class="p-2 me-2" style="background-color: bisque;">We are</div>
                         <div class="p-2 me-2" style="background-color: bisque;">Align Items</div>
                         <div class="p-2 me-2" style="background-color: bisque;">End</div>
                     </div>
 
                     <!--align-items-CENTER-->
-                    <div class="d-flex align-items-center mt-1" style="background-color: rgb(236, 198, 152); height: 3.5rem">
+                    <div class="d-flex align-items-center mt-1"
+                        style="background-color: rgb(236, 198, 152); height: 3.5rem">
                         <div class="p-2 me-2" style="background-color: bisque;">We are</div>
                         <div class="p-2 me-2" style="background-color: bisque;">Align Items</div>
                         <div class="p-2 me-2" style="background-color: bisque;">Center</div>
                     </div>
 
                     <!--align-items-BASELINE-->
-                    <div class="d-flex align-items-baseline mt-1" style="background-color: rgb(236, 198, 152); height: 3.5rem">
+                    <div class="d-flex align-items-baseline mt-1"
+                        style="background-color: rgb(236, 198, 152); height: 3.5rem">
                         <div class="p-2 me-2" style="background-color: bisque;">We are</div>
                         <div class="p-2 me-2" style="background-color: bisque;">Align Items</div>
                         <div class="p-2 me-2" style="background-color: bisque;">Baseline</div>
                     </div>
 
                     <!--align-items-STRETCH-->
-                    <div class="d-flex align-items-stretch mt-1" style="background-color: rgb(236, 198, 152); height: 3.5rem">
+                    <div class="d-flex align-items-stretch mt-1"
+                        style="background-color: rgb(236, 198, 152); height: 3.5rem">
                         <div class="p-2 me-2" style="background-color: bisque;">We are</div>
                         <div class="p-2 me-2" style="background-color: bisque;">Align Items</div>
                         <div class="p-2 me-2" style="background-color: bisque;">Stretch</div>
@@ -156,7 +162,101 @@
 
                 </div>
 
+                <!--align self-->
+                <div class="mt-3">
+                    <h3>Align self</h3>
+
+                    <!--align-self-START-->
+                    <div class="d-flex justify-content-around"
+                        style="background-color: rgb(236, 164, 152); height: 3.5rem">
+                        <div class="p-2 me-2" style="background-color: rgb(255, 215, 196);">Default 1</div>
+                        <div class="p-2 me-2 align-self-start" style="background-color: rgb(255, 215, 196);;">Self Start
+                        </div>
+                        <div class="p-2 me-2" style="background-color: rgb(255, 215, 196);">Default 2</div>
+                    </div>
+
+                    <!--align-self-CENTER-->
+                    <div class="d-flex justify-content-around mt-1"
+                        style="background-color: rgb(236, 164, 152); height: 3.5rem">
+                        <div class="p-2 me-2" style="background-color: rgb(255, 215, 196);">Default 1</div>
+                        <div class="p-2 me-2 align-self-center" style="background-color: rgb(255, 215, 196);">Self
+                            Center</div>
+                        <div class="p-2 me-2" style="background-color: rgb(255, 215, 196);">Default 2</div>
+                    </div>
+
+                    <!--align-self-END-->
+                    <div class="d-flex justify-content-around mt-1"
+                        style="background-color: rgb(236, 164, 152); height: 3.5rem">
+                        <div class="p-2 me-2" style="background-color: rgb(255, 215, 196);">Default 1</div>
+                        <div class="p-2 me-2 align-self-end" style="background-color: rgb(255, 215, 196);">Self End
+                        </div>
+                        <div class="p-2 me-2" style="background-color: rgb(255, 215, 196);">Default 2</div>
+                    </div>
+
+                    <!--align-self-BASELINE-->
+                    <div class="d-flex justify-content-around mt-1"
+                        style="background-color: rgb(236, 164, 152); height: 3.5rem">
+                        <div class="p-2 me-2" style="background-color: rgb(255, 215, 196);">Default 1</div>
+                        <div class="p-2 me-2 align-self-baseline" style="background-color: rgb(255, 215, 196);">Self
+                            Baseline</div>
+                        <div class="p-2 me-2" style="background-color: rgb(255, 215, 196);">Default 2</div>
+                    </div>
+
+                    <!--align-self-STRETCH-->
+                    <div class="d-flex justify-content-around mt-1"
+                        style="background-color: rgb(236, 164, 152); height: 3.5rem">
+                        <div class="p-2 me-2" style="background-color: rgb(255, 215, 196);">Default 1</div>
+                        <div class="p-2 me-2 align-self-stretch" style="background-color: rgb(255, 215, 196);">Self
+                            Stretch</div>
+                        <div class="p-2 me-2" style="background-color: rgb(255, 215, 196);">Default 2</div>
+                    </div>
+
+
+                </div>
+
             </div>
+
+            <div class="col-6">
+
+                <!--fill, grow, shrink-->
+                <div>
+                    <h3>Fill, grow, shrink</h3>
+
+                    <!--fill-->
+                    <div class="d-flex">
+                        <div class=" p-2 flex-fill border border-secondary"
+                            style="background-color: rgb(230, 239, 221);">Flex-fill small</div>
+                        <div class="p-2 flex-fill border border-secondary"
+                            style="background-color: rgb(230, 239, 221);">Flex-fill bigger</div>
+                        <div class="p-2 flex-fill border border-secondary"
+                            style="background-color: rgb(230, 239, 221);">Flex-fill extra-large</div>
+                    </div>
+
+                    <!--grow-->
+                    <div class="d-flex mt-1">
+                        <div class=" p-2 flex-grow-1 border border-secondary"
+                            style="background-color: rgb(161, 222, 101);">Flex-grow 1</div>
+                        <div class="p-2 flex-grow-0 border border-secondary"
+                            style="background-color: rgb(161, 222, 101);">Flex-grow 0</div>
+                        <div class="p-2 border border-secondary" style="background-color: rgb(161, 222, 101);">Flex-grow
+                            def</div>
+                    </div>
+
+                    <!--shrink-->
+                    <div class="d-flex mt-1">
+                        <div class="p-2 w-100 border border-secondary" style="background-color: rgb(169, 197, 141);">
+                            Huge w-100</div>
+                        <div class="p-2 flex-shrink-1 border border-secondary"
+                            style="background-color: rgb(169, 197, 141);">Flex-shrink 1</div>
+                    </div>
+
+                </div>
+
+                <!--auto margins-->
+                <!--YO KOWD HIA-->
+
+            </div>
+
         </div>
 
     </div>
