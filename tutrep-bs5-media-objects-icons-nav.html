@@ -173,11 +173,89 @@
 
             </div>
 
-            <!--navbar-->
-            <!--YO KOWD HIA-->
-
         </div>
 
+        <!--navbar-->
+        <div class="row mt-3">
+            <h3>Navbar</h3>
+
+            <!--regular dark navbar-->
+            <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+                <div class="container-fluid">
+
+                    <!--brand-->
+                    <a href="#" class="navbar-brand">BRAND§</a>
+
+                    <!--toggler-->
+                    <button type="button" class="navbar-toggler" data-bs-toggle="collapse"
+                        data-bs-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <!--nav-items (collapsable)-->
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <div class="navbar-nav">
+                            <a href="#" class="nav-item nav-link">Home</a>
+                            <a href="#" class="nav-item nav-link">Shop</a>
+                            <a href="#" class="nav-item nav-link">Contacts</a>
+                        </div>
+
+                        <!--login-->
+                        <div class="navbar-nav ms-auto">
+                            <a href="#" class="nav-item nav-link">Login</a>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </nav>
+
+            <!--warning navbar, dropdown, search-->
+            <nav class="navbar navbar-expand-md navbar-light bg-warning mt-1">
+                <div class="container-fluid">
+
+                    <!--brand-->
+                    <a href="#" class="navbar-brand">BRAND§</a>
+
+                    <!--toggler-->
+                    <button type="button" class="navbar-toggler" data-bs-toggle="collapse"
+                        data-bs-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <!--nav-items (collapsable)-->
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <div class="navbar-nav">
+                            <a href="#" class="nav-item nav-link">Home</a>
+                            <a href="#" class="nav-item nav-link">Shop</a>
+                            <a href="#" class="nav-item nav-link">Contacts</a>
+                            <div class="dropdown nav-item">
+                                <a href="" class="dropdown-toggle nav-link" data-bs-toggle="dropdown">Dropdown</a>
+                                <div class="dropdown-menu">
+                                    <a href="#" class="dropdown-item">Item 1</a>
+                                    <a href="#" class="dropdown-item">Item 2</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--search-->
+                        <form action="" class="d-flex ms-auto">
+                            <div class="input-group">
+                                <input type="text" placeholder="Search" class="form-control">
+                                <button class="btn btn-secondary" type="button">
+                                    <i class="bi-search"></i>
+                                </button>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+
+
+            </nav>
+
+        </div>
 
 
 
