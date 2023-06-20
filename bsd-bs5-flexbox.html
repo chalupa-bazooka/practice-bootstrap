@@ -253,7 +253,240 @@
                 </div>
 
                 <!--auto margins-->
-                <!--YO KOWD HIA-->
+                <div class="mt-2">
+                    <h3>Auto margins</h3>
+
+                    <!--no auto margins-->
+                    <div class="d-flex" style="background-color:rgb(72, 164, 245)">
+                        <div class="p-2 me-1" style="background-color:rgb(211, 224, 236)">We don't</div>
+                        <div class="p-2 me-1" style="background-color:rgb(211, 224, 236)">Have any</div>
+                        <div class="p-2" style="background-color:rgb(211, 224, 236)">Auto margins</div>
+                    </div>
+
+                    <!--auto end margins-->
+                    <div class="d-flex mt-1" style="background-color:rgb(72, 164, 245)">
+                        <div class="p-2 me-auto" style="background-color:rgb(211, 224, 236)">ME-auto</div>
+                        <div class="p-2 me-1" style="background-color:rgb(211, 224, 236)">Auto margins</div>
+                        <div class="p-2" style="background-color:rgb(211, 224, 236)">At the end</div>
+                    </div>
+
+                    <!--auto start margins-->
+                    <div class="d-flex mt-1" style="background-color:rgb(72, 164, 245)">
+                        <div class="p-2 me-1" style="background-color:rgb(211, 224, 236)">Auto marg's</div>
+                        <div class="p-2" style="background-color:rgb(211, 224, 236)">At the start</div>
+                        <div class="p-2 ms-auto" style="background-color:rgb(211, 224, 236)">MS-auto</div>
+                    </div>
+
+                    <!--auto bottom and top margins-->
+                    <div class="row">
+
+                        <!--auto bottom margin-->
+                        <div class="col-6">
+                            <div class="d-flex mt-1 align-items-center flex-column"
+                                style="background-color:rgb(72, 164, 245); height: 200px">
+                                <div class="p-1 mb-auto" style="background-color:rgb(211, 224, 236)">MB-auto</div>
+                                <div class="p-1 mb-1" style="background-color:rgb(211, 224, 236)">Auto-margin</div>
+                                <div class="p-1" style="background-color:rgb(211, 224, 236)">Bottom</div>
+                            </div>
+                        </div>
+
+                        <!--auto top margin-->
+                        <div class="col-6">
+                            <div class="d-flex mt-1 align-items-center flex-column"
+                                style="background-color:rgb(72, 164, 245); height: 200px">
+                                <div class="p-1 mb-1" style="background-color:rgb(211, 224, 236)">Auto-margin</div>
+                                <div class="p-1" style="background-color:rgb(211, 224, 236)">Top</div>
+                                <div class="p-1 mt-auto" style="background-color:rgb(211, 224, 236)">MT-auto</div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!--wrap-->
+                <div class="mt-2">
+                    <h3>Wrap</h3>
+
+                    <!--no wrap-->
+                    <div class="d-flex flex-nowrap" style="background-color: rgb(221, 202, 178);">
+                        <div class="me-1 border border-secondary" style="background-color: burlywood">No wrap</div>
+                        <div class="me-1 border border-secondary" style="background-color: burlywood">No wrap</div>
+                        <div class="me-1 border border-secondary" style="background-color: burlywood">No wrap</div>
+                        <div class="me-1 border border-secondary" style="background-color: burlywood">No wrap</div>
+                        <div class="me-1 border border-secondary" style="background-color: burlywood">No wrap</div>
+                        <div class="border border-secondary" style="background-color: burlywood">No wrap</div>
+                    </div>
+
+                    <!--wrap-->
+                    <div class="d-flex flex-wrap mt-1" style="background-color: rgb(221, 202, 178);">
+                        <div class="me-1 border border-secondary" style="background-color: burlywood">Yes wrap</div>
+                        <div class="me-1 border border-secondary" style="background-color: burlywood">Yes wrap</div>
+                        <div class="me-1 border border-secondary" style="background-color: burlywood">Yes wrap</div>
+                        <div class="me-1 border border-secondary" style="background-color: burlywood">Yes wrap</div>
+                        <div class="me-1 border border-secondary" style="background-color: burlywood">Yes wrap</div>
+                        <div class="border border-secondary" style="background-color: burlywood">Yes wrap</div>
+                    </div>
+
+                    <!--reverse wrap-->
+                    <div class="d-flex flex-wrap-reverse mt-1" style="background-color: rgb(221, 202, 178);">
+                        <div class="me-1 border border-secondary" style="background-color: burlywood">Rev wrap</div>
+                        <div class="me-1 border border-secondary" style="background-color: burlywood">Rev wrap</div>
+                        <div class="me-1 border border-secondary" style="background-color: burlywood">Rev wrap</div>
+                        <div class="me-1 border border-secondary" style="background-color: burlywood">Rev wrap</div>
+                        <div class="me-1 border border-secondary" style="background-color: burlywood">Rev wrap</div>
+                        <div class="border border-secondary" style="background-color: burlywood">Rev wrap</div>
+                    </div>
+
+                </div>
+
+                <!--order-->
+                <div class="mt-2">
+                    <h3>Order</h3>
+
+                    <div class="d-flex justify-content-between align-items-center"
+                        style="background-color: rgb(178, 217, 221); height: 3rem">
+                        <div class="p-1 me-1 border border-secondary order-2"
+                            style="background-color: rgb(135, 208, 222)">Item 1</div>
+                        <div class="p-1 me-1 border border-secondary order-1"
+                            style="background-color: rgb(135, 208, 222)">Item 2</div>
+                        <div class="p-1 me-1 border border-secondary order-5"
+                            style="background-color: rgb(135, 208, 222)">Item 3</div>
+                        <div class="p-1 me-1 border border-secondary order-3"
+                            style="background-color: rgb(135, 208, 222)">Item 4</div>
+                        <div class="p-1 me-1 border border-secondary order-4"
+                            style="background-color: rgb(135, 208, 222)">Item 5</div>
+                    </div>
+
+                </div>
+
+                <!--align content-->
+                <div class="mt-2">
+                    <h3>Align content</h3>
+                    <div class="row">
+
+                        <!--start-->
+                        <div class="col-6">
+                            <div class="d-flex align-content-start flex-wrap"
+                                style="background-color: rgb(209, 239, 164); height: 8rem">
+                                <div class="border border-success p-1 me-1" style="background-color: greenyellow;">start
+                                </div>
+                                <div class="border border-success p-1 me-1" style="background-color: greenyellow;">start
+                                </div>
+                                <div class="border border-success p-1 me-1" style="background-color: greenyellow;">start
+                                </div>
+                                <div class="border border-success p-1 me-1" style="background-color: greenyellow;">start
+                                </div>
+                                <div class="border border-success p-1 me-1" style="background-color: greenyellow;">start
+                                </div>
+                                <div class="border border-success p-1 me-1" style="background-color: greenyellow;">start
+                                </div>
+                                <div class="border border-success p-1 me-1" style="background-color: greenyellow;">start
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--center-->
+                        <div class="col-6">
+                            <div class="d-flex align-content-center flex-wrap"
+                                style="background-color: rgb(209, 239, 164); height: 8rem">
+                                <div class="border border-success p-1 me-1" style="background-color: greenyellow;">
+                                    center</div>
+                                <div class="border border-success p-1 me-1" style="background-color: greenyellow;">
+                                    center</div>
+                                <div class="border border-success p-1 me-1" style="background-color: greenyellow;">
+                                    center</div>
+                                <div class="border border-success p-1 me-1" style="background-color: greenyellow;">
+                                    center</div>
+                                <div class="border border-success p-1 me-1" style="background-color: greenyellow;">
+                                    center</div>
+                                <div class="border border-success p-1 me-1" style="background-color: greenyellow;">
+                                    center</div>
+                            </div>
+                        </div>
+
+                        <!--end-->
+                        <div class="col-6 mt-1">
+                            <div class="d-flex align-content-end flex-wrap"
+                                style="background-color: rgb(209, 239, 164); height: 8rem">
+                                <div class="border border-success p-1 me-1" style="background-color: greenyellow;">end
+                                </div>
+                                <div class="border border-success p-1 me-1" style="background-color: greenyellow;">end
+                                </div>
+                                <div class="border border-success p-1 me-1" style="background-color: greenyellow;">end
+                                </div>
+                                <div class="border border-success p-1 me-1" style="background-color: greenyellow;">end
+                                </div>
+                                <div class="border border-success p-1 me-1" style="background-color: greenyellow;">end
+                                </div>
+                                <div class="border border-success p-1 me-1" style="background-color: greenyellow;">end
+                                </div>
+                                <div class="border border-success p-1 me-1" style="background-color: greenyellow;">end
+                                </div>
+                                <div class="border border-success p-1 me-1" style="background-color: greenyellow;">end
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--between-->
+                        <div class="col-6 mt-1">
+                            <div class="d-flex align-content-between flex-wrap"
+                                style="background-color: rgb(209, 239, 164); height: 8rem">
+                                <div class="border border-success p-1 me-1" style="background-color: greenyellow;">
+                                    between</div>
+                                <div class="border border-success p-1 me-1" style="background-color: greenyellow;">
+                                    between</div>
+                                <div class="border border-success p-1 me-1" style="background-color: greenyellow;">
+                                    between</div>
+                                <div class="border border-success p-1 me-1" style="background-color: greenyellow;">
+                                    between</div>
+                                <div class="border border-success p-1 me-1" style="background-color: greenyellow;">
+                                    between</div>
+                                <div class="border border-success p-1 me-1" style="background-color: greenyellow;">
+                                    between</div>
+                            </div>
+                        </div>
+
+                        <!--around-->
+                        <div class="col-6 mt-1">
+                            <div class="d-flex align-content-around flex-wrap"
+                                style="background-color: rgb(209, 239, 164); height: 8rem">
+                                <div class="border border-success p-1 me-1" style="background-color: greenyellow;">
+                                    around</div>
+                                <div class="border border-success p-1 me-1" style="background-color: greenyellow;">
+                                    around</div>
+                                <div class="border border-success p-1 me-1" style="background-color: greenyellow;">
+                                    around</div>
+                                <div class="border border-success p-1 me-1" style="background-color: greenyellow;">
+                                    around</div>
+                                <div class="border border-success p-1 me-1" style="background-color: greenyellow;">
+                                    around</div>
+                                <div class="border border-success p-1 me-1" style="background-color: greenyellow;">
+                                    around</div>
+                            </div>
+                        </div>
+
+                        <!--stretch-->
+                        <div class="col-6 mt-1">
+                            <div class="d-flex align-content-stretch flex-wrap"
+                                style="background-color: rgb(209, 239, 164); height: 8rem">
+                                <div class="border border-success p-1 me-1" style="background-color: greenyellow;">
+                                    stretch</div>
+                                <div class="border border-success p-1 me-1" style="background-color: greenyellow;">
+                                    stretch</div>
+                                <div class="border border-success p-1 me-1" style="background-color: greenyellow;">
+                                    stretch</div>
+                                <div class="border border-success p-1 me-1" style="background-color: greenyellow;">
+                                    stretch</div>
+                                <div class="border border-success p-1 me-1" style="background-color: greenyellow;">
+                                    stretch</div>
+                                <div class="border border-success p-1 me-1" style="background-color: greenyellow;">
+                                    stretch</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
 
             </div>
 
