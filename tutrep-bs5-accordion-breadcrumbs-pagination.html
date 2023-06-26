@@ -9,8 +9,14 @@
 
     <style>
         /*this is for anchors to not get covered by the fixed header*/
-        h3 {position: relative;}
-        h3 span {position: absolute; top: -70px;}
+        h3 {
+            position: relative;
+        }
+
+        h3 span {
+            position: absolute;
+            top: -70px;
+        }
     </style>
 
     <!-- Bootstrap CSS -->
@@ -58,9 +64,60 @@
         <!--accordion-->
         <div class="row mt-3">
             <h3>Accordion<span id="headerAccordion"></span></h3>
+
+            <!--accordion default with 2 items-->
+            <div class="col-6">
+                <div class="accordion" id="accordion1">
+
+                    <!--accordion item 1-->
+                    <div class="accordion-item">
+
+                        <!--accordion header 1-->
+                        <h2 class="accordion-header" id="accordionHeader1">
+                            <button class="accordion-button collapsed" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" type="button">
+                                1. What are the capitals of South Caucasian countries?
+                            </button>
+                        </h2>
+
+                        <!--accordion content 1-->
+                        <div class="accordion-collapse collapse" id="collapseOne" data-bs-parent="accordion1">
+                            <div class="card-body">
+                                <p>The 3 South Caucasian countries are (alphabetically) Armenia, Azerbaijan, and
+                                    Georgia. Their respective capitals are Yerevan, Baku, and Tbilisi.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <!--accordion item 2-->
+                    <div class="accordion-item">
+
+                        <!--accordion header 2-->
+                        <h2 class="accordion-header" id="accordionHeader2">
+                            <button class="accordion-button collapsed" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" type="button">
+                                2. What are their respective populations?
+                            </button>
+                        </h2>
+
+                        <!--accordion content 2-->
+                        <div class="accordion-collapse collapse" id="collapseTwo" data-bs-parent="accordion1">
+                            <div class="card-body">
+                                <p>Yerevan – 1 mln. Baku – 2.2 mln. Tbilisi – 1.2 mln. </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            
         </div>
 
-        
+
+
 
     </main>
 
