@@ -61,12 +61,14 @@
         <h1>Accordion, breadcrumbs, & pagination</h1>
         <p class="lead italic"><i>This is gonna be fun! ...I guess.</i></p>
 
-        <!--accordion-->
+        <!--accordion & breadcrumbs-->
         <div class="row mt-3">
-            <h3>Accordion<span id="headerAccordion"></span></h3>
 
-            <!--accordion default with 2 items-->
+            <!--accordion-->
             <div class="col-6">
+                <h3>Accordion<span id="headerAccordion"></span></h3>
+
+                <!--accordion default with 2 items-->
                 <div class="accordion" id="accordion1">
 
                     <!--accordion item 1-->
@@ -81,7 +83,7 @@
                         </h2>
 
                         <!--accordion content 1-->
-                        <div class="accordion-collapse collapse" id="collapseOne" data-bs-parent="accordion1">
+                        <div class="accordion-collapse collapse" id="collapseOne" data-bs-parent="#accordion1">
                             <div class="card-body">
                                 <p>The 3 South Caucasian countries are (alphabetically) Armenia, Azerbaijan, and
                                     Georgia. Their respective capitals are Yerevan, Baku, and Tbilisi.</p>
@@ -103,7 +105,7 @@
                         </h2>
 
                         <!--accordion content 2-->
-                        <div class="accordion-collapse collapse" id="collapseTwo" data-bs-parent="accordion1">
+                        <div class="accordion-collapse collapse" id="collapseTwo" data-bs-parent="#accordion1">
                             <div class="card-body">
                                 <p>Yerevan – 1 mln. Baku – 2.2 mln. Tbilisi – 1.2 mln. </p>
                             </div>
@@ -113,7 +115,33 @@
 
                 </div>
             </div>
-            
+
+            <!--breadcrumbs-->
+            <div class="col-6">
+                <h3>Breadcrumbs<span id="headerBreadcrumbs"></span></h3>
+                <nav>
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item"><a href="#">Content</a></li>
+                        <li class="breadcrumb-item"><a href="#headerBreadcrumbs"></a>Breadcrumbs</a></li>
+                    </ol>
+                </nav>
+            </div>
+
+            <!--pagination-->
+            <div class="col-6 mt-2">
+                <h3>Pagination<span id="headerPagination"></span></h3>
+                <nav>
+                    <ul class="pagination">
+                        <li class="page-item"><a href="#" class="page-link">Previous</a></li> 
+                        <li class="page-item"><a href="#" class="page-link">1</a></li>
+                        <li class="page-item"><a href="#" class="page-link">2</a></li>
+                        <li class="page-item"><a href="#" class="page-link">3</a></li>
+                        <li class="page-item"><a href="#" class="page-link">Next</a></li> 
+                    </ul>
+                </nav>
+            </div>
+
         </div>
 
 
