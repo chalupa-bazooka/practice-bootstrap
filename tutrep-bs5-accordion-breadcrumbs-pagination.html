@@ -60,8 +60,6 @@
     <main class="container m-3" style="padding-top: 60px">
         <h1>Accordion, breadcrumbs, & pagination</h1>
         <p class="lead italic"><i>This is gonna be fun! ...I guess.</i></p>
-
-        <!--accordion & breadcrumbs-->
         <div class="row mt-3">
 
             <!--accordion-->
@@ -131,15 +129,53 @@
             <!--pagination-->
             <div class="col-6 mt-2">
                 <h3>Pagination<span id="headerPagination"></span></h3>
-                <nav>
-                    <ul class="pagination">
-                        <li class="page-item"><a href="#" class="page-link">Previous</a></li> 
-                        <li class="page-item"><a href="#" class="page-link">1</a></li>
-                        <li class="page-item"><a href="#" class="page-link">2</a></li>
+
+                <!--basic-->
+                <div>
+                    <h5>Basic</h5>
+                    <nav>
+                        <ul class="pagination">
+                            <li class="page-item"><a href="#" class="page-link">Previous</a></li>
+                            <li class="page-item"><a href="#" class="page-link">1</a></li>
+                            <li class="page-item"><a href="#" class="page-link">2</a></li>
+                            <li class="page-item"><a href="#" class="page-link">3</a></li>
+                            <li class="page-item"><a href="#" class="page-link">Next</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <!--large, center, active-->
+                <div class="mt-2">
+                    <h5>Large centered</h5>
+                    <nav>
+                        <ul class="pagination pagination-lg justify-content-center">
+                            <li class="page-item"><a href="#" class="page-link">Back</a></li>
+                            <li class="page-item active"><a href="#" class="page-link">1</a></li>
+                            <li class="page-item"><a href="#" class="page-link">2</a></li>
+                            <li class="page-item"><a href="#" class="page-link">3</a></li>
+                            <li class="page-item"><a href="#" class="page-link">Next</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <!--small, end, active, disabled-->
+                <div class="mt-2">
+                    <h5>Small end-aligned</h5>
+                    <nav class="pagination pagination-sm justify-content-end">
+                        <li class="page-item"><a href="#" class="page-link">Back</a></li>
+                        <li class="page-item disabled"><a href="#" class="page-link">1</a></li>
+                        <li class="page-item active"><a href="#" class="page-link">2</a></li>
                         <li class="page-item"><a href="#" class="page-link">3</a></li>
-                        <li class="page-item"><a href="#" class="page-link">Next</a></li> 
-                    </ul>
-                </nav>
+                        <li class="page-item"><a href="#" class="page-link">Next</a></li>
+                    </nav>
+                </div>
+
+
+            </div>
+
+            <!--badges-->
+            <div class="col-6 mt-2">
+
             </div>
 
         </div>
