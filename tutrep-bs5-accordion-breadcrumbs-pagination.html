@@ -47,6 +47,7 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav">
                     <a href="#headerAccordion" class="nav-item nav-link">Accordion</a>
+                    <a href="#headerBadges" class="nav-item nav-link">Badges</a>
                     <a href="#headerBreadcrumbs" class="nav-item nav-link">Breadcrumbs</a>
                     <a href="#headerPagination" class="nav-item nav-link">Pagination</a>
                 </div>
@@ -175,6 +176,24 @@
 
             <!--badges-->
             <div class="col-6 mt-2">
+                <h3>Badges <span id="headerBadges"></span></h3>
+
+                <!--list with examples of badges-->
+                <div>
+                    <h6>List of clowns:</h6>
+                    <ul>
+                        <li>Arlecchino <span class="badge bg-primary">New</span></li>
+                        <li>Bozo <span class="badge rounded-pill bg-danger">100%</span></li>
+                        <li>Pierrot <span class="badge bg-dark">Tragic</span></li>
+                    </ul>
+                </div>
+
+                <!--button with absolutely positioned badge-->
+                <button class="btn btn-success position-relative">
+                    Badges can use absolute position (like here)
+                    <span
+                        class="badge rounded-pill bg-danger position-absolute top-0 start-100 translate-middle">50+</span>
+                </button>
 
             </div>
 
