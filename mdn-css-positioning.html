@@ -21,6 +21,10 @@
         main {
             padding-top: 60px;
         }
+
+        table tbody tr :not(:nth-child(1)) {
+            font-weight: 300;
+        }
     </style>
 
     <!-- Bootstrap CSS -->
@@ -64,10 +68,69 @@
     <main class="container m-3">
         <h1>Positioning in CSS</h1>
         <p class="lead"><i>As explained on MDN</i></p>
+
+        <!--row 1: table comparing positioning types-->
         <div class="row mt-3">
+                <h3>Comparison of positioning types</h3>
+                <table class="table table-striped table-bordered table-hover">
+                    <!--head-->
+                    <thead>
+                        <tr class="text-center">
+                            <th></th>
+                            <th>static</th>
+                            <th>relative</th>
+                            <th>absolute</th>
+                            <th>fixed</th>
+                            <th>sticky</th>
+                        </tr>
+                    </thead>
 
-            <!--YO KOWD HIA-->
+                    <tbody>
+                        <!--row 1: default?-->
+                        <tr>
+                            <th>default?</th>
+                            <th>yes</th>
+                            <th>no</th>
+                            <th>no</th>
+                            <th>no</th>
+                            <th>no</th>
+                        </tr>
 
+                        <!--row 2: normal flow?-->
+                        <tr>
+                            <th>normal flow?</th>
+                            <th>yes</th>
+                            <th>yes</th>
+                            <th>no</th>
+                            <th>no</th>
+                            <th>no</th>
+                        </tr>
+
+                        <!--row 3: position props?-->
+                        <tr>
+                            <th>position props?</th>
+                            <th>no</th>
+                            <th>yes</th>
+                            <th>yes</th>
+                            <th>yes</th>
+                            <th>yes</th>
+                        </tr>
+
+                        <!--row 4: relative to?-->
+                        <tr>
+                            <th>relative to?</th>
+                            <th>none</th>
+                            <th>itself</th>
+                            <th>closest positioned ancestor</th>
+                            <th>initial container</th>
+                            <th>closest scrolling ancestor</th>
+                        </tr>
+
+
+
+                    </tbody>
+
+                </table>
         </div>
 
     </main>
