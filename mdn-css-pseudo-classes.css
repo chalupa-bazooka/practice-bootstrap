@@ -1,0 +1,33 @@
+p {
+    text-align: justify;
+}
+
+
+/*TREE STRUCTURE*/
+/*:empty*/
+li:empty {
+    outline: 2px solid deeppink;
+    height: 1rem;
+}
+
+/*:nth-child*/
+.ulNthChild li:nth-child(odd) {
+    background-color: plum;
+}
+
+.ulNthChild :nth-child(2) {
+    outline: 2px dotted blue;
+}
+
+.ulNthChild li:nth-child(n + 3) {
+    font-weight: 700;
+}
+
+/*:nth-last-child*/
+.ulNthLastChild :nth-last-child(2) {
+    outline: 3px dotted blueviolet;
+}
+
+.ulNthLastChild :nth-last-child(n + 3) {
+    font-weight: 700;
+}

@@ -34,6 +34,9 @@
     <!--Font Awesome icons-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <!--my custom styles-->
+    <link rel="stylesheet" href="mdn-css-pseudo-classes.css">
+
 </head>
 
 <body>
@@ -52,7 +55,7 @@
             <!--nav-item (collapsable)-->
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav">
-                    <a href="#" class="nav-item nav-link">Link 1</a>
+                    <a href="#headerTreeStructure" class="nav-item nav-link">Tree Structure</a>
                     <a href="#" class="nav-item nav-link">Link 2</a>
                     <a href="#" class="nav-item nav-link">Link 3</a>
                 </div>
@@ -66,11 +69,54 @@
     <main class="container m-3">
         <h1>Pseudo classes in CSS</h1>
         <p class="lead"><i>As explained on MDN</i></p>
+        <p><i>In this page I'll focus on several types of pseudo classes: tree structure, user action, and
+                functional.</i></p>
 
-        <!--row 1-->
+        <!--row 1: tree structure-->
         <div class="row mt-3">
+            <h3 class="h3modified">Tree structure<span id="headerTreeStructure"></span></h3>
 
-            <!--YO KOWD HIA-->
+            <!--:empty-->
+            <div class="col-6 col-lg-4 mt-2">
+                <h5>:empty</h5>
+                <ul>
+                    <li>Not empty</li>
+                    <li> </li>
+                    <li></li>
+                </ul>
+                <p>The idea here is that we apply the pink outline style to all empty &lt;li&gt; elements. The first
+                    element is
+                    obviously not empty. The second contains a whitespace and it's also considered not empty. The third,
+                    however, has nothing and thus is viewed as empty, hence it gets the specified style.
+                </p>
+
+            </div>
+
+            <!--:nth-child-->
+            <div class="col-6 col-lg-4 mt-2">
+                <h5>:nth-child()</h5>
+                <ul class="ulNthChild">
+                    <li>First child</li>
+                    <li>Second child</li>
+                    <li>Third child</li>
+                    <li>Fourth child</li>
+                    <li>Fifth child</li>
+                </ul>
+                <p>The even children have colored bgs. The second child has outline. And each first child starting with the third one is bold.</p>
+            </div>
+
+            <!--:nth-last-child-->
+            <div class="col-5 col-lg-4 mt-2">
+                <h5>:nth-last-child()</h5>
+                <ul class="ulNthLastChild">
+                    <li>First child viewed as last</li>
+                    <li>2nd child viewed as 4th</li>
+                    <li>3rd child viewed as 3rd</li>
+                    <li>4th child viewed as 2nd</li>
+                    <li>Last child viewed as first</li>
+                </ul>
+                <p>nth-last-child starts counting from the end. Hence the second element has the outline. The last three are bold.</p>
+            </div>
 
         </div>
 
@@ -83,7 +129,7 @@
 
             <!--links-->
             <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-                <li class="nav-item"><a href="#" class="nav-link px-2">Link 1</a></li>
+                <li class="nav-item"><a href="#headerTreeStructure" class="nav-link px-2">Tree Structure</a></li>
                 <li class="nav-item"><a href="#" class="nav-link px-2">Link 2</a></li>
                 <li class="nav-item"><a href="#" class="nav-link px-2">Link 3</a></li>
             </ul>
