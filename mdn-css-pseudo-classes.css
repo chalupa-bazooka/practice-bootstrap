@@ -31,3 +31,30 @@ li:empty {
 .ulNthLastChild :nth-last-child(n + 3) {
     font-weight: 700;
 }
+
+/*:only-child*/
+.ulOnlyChild :only-child {
+    background-color: burlywood;
+}
+
+/*:nth-of-type*/
+.divNthOfType div:nth-of-type(odd) {
+    background-color: bisque;
+}
+
+
+/*USER ACTION*/
+/*:hover*/
+.buttonHover:hover {
+    background-color: green;
+}
+
+/*:active*/
+.buttonActive:active{
+    background-color: rgb(126, 51, 217);
+}
+
+/*:focus*/
+.inputFocus:focus{
+    background-color: beige;
+}
