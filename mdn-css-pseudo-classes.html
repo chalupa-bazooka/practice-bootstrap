@@ -56,7 +56,7 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav">
                     <a href="#headerTreeStructure" class="nav-item nav-link">Tree Structure</a>
-                    <a href="#" class="nav-item nav-link">Link 2</a>
+                    <a href="#headerUserAction" class="nav-item nav-link">User Action</a>
                     <a href="#" class="nav-item nav-link">Link 3</a>
                 </div>
             </div>
@@ -102,11 +102,12 @@
                     <li>Fourth child</li>
                     <li>Fifth child</li>
                 </ul>
-                <p>The even children have colored bgs. The second child has outline. And each first child starting with the third one is bold.</p>
+                <p>The even children have colored bgs. The second child has outline. And each first child starting with
+                    the third one is bold.</p>
             </div>
 
             <!--:nth-last-child-->
-            <div class="col-5 col-lg-4 mt-2">
+            <div class="col-6 col-lg-4 mt-2">
                 <h5>:nth-last-child()</h5>
                 <ul class="ulNthLastChild">
                     <li>First child viewed as last</li>
@@ -115,8 +116,68 @@
                     <li>4th child viewed as 2nd</li>
                     <li>Last child viewed as first</li>
                 </ul>
-                <p>nth-last-child starts counting from the end. Hence the second element has the outline. The last three are bold.</p>
+                <p>nth-last-child starts counting from the end. Hence the second element has the outline. The last three
+                    are bold.</p>
             </div>
+
+            <!--:only-child-->
+            <div class="col-6 col-lg-4 mt-2">
+                <h5>:only-child</h5>
+                <h6>List 1</h6>
+                <ul class="ulOnlyChild">
+                    <li>Child 1</li>
+                    <li>Child 2</li>
+                </ul>
+                <h6>List 2</h6>
+                <ul class="ulOnlyChild">
+                    <li>Child 1</li>
+                </ul>
+                <p>Both lists belong to the same class. But only one of them has background for its &lt;li&gt; – that's
+                    because this style is targeted at only-child.</p>
+            </div>
+
+            <!--:nth-of-type-->
+            <div class="col-6 col-lg-4 mt-2">
+                <h5>:nth-of-type()</h5>
+                <div class="divNthOfType">
+                    <div>Div 1</div>
+                    <div>Div 2</div>
+                    <p>P 1</p>
+                    <div>Div 3</div>
+                </div>
+                <p>The background-color style is set to apply only to odd &lt;div&gt; children elements. Hence a
+                    &lt;p&gt; element is disregarded.</p>
+            </div>
+
+        </div>
+
+        <!--row 2: user action-->
+        <div class="row mt-3">
+            <h3 class="h3modified">User action<span id="headerUserAction"></span></h3>
+
+            <!--hover-->
+            <div class="col-6 col-lg-4 mt-2">
+                <h5>:hover</h5>
+                <button class="btn btn-primary buttonHover">Hover over me</button>
+                <p>The background color of the button changes to green upon hover.</p>
+            </div>
+
+            <!--active-->
+            <div class="col-6 col-lg-4 mt-2">
+                <h5>:active</h5>
+                <button class="btn btn-primary buttonActive">Click on me</button>
+                <p>When you press this button, its background-color turns purple for a moment. You can press the button without releasing it to see the color better.</p>
+            </div>
+
+            <!--focus-->
+            <div class="col-6 col-lg-4 mt-2">
+                <h5>:focus</h5>
+                <label>Input: 
+                    <input class="inputFocus" name="firstName" type="text" placeholder="click here">
+                </label>
+                <p>When you take this input in focus (click its field), its background color changes.</p>
+            </div>
+
 
         </div>
 
@@ -130,7 +191,7 @@
             <!--links-->
             <ul class="nav justify-content-center border-bottom pb-3 mb-3">
                 <li class="nav-item"><a href="#headerTreeStructure" class="nav-link px-2">Tree Structure</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2">Link 2</a></li>
+                <li class="nav-item"><a href="#headerUserAction" class="nav-link px-2">User Action</a></li>
                 <li class="nav-item"><a href="#" class="nav-link px-2">Link 3</a></li>
             </ul>
 
