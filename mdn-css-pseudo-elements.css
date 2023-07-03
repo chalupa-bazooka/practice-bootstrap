@@ -1,0 +1,52 @@
+p {
+    text-align: justify;
+}
+
+/*::after & ::before*/
+.ulAfter :nth-child(2)::after {
+    content: " 🤡";
+}
+
+.ulAfter :nth-child(4)::before {
+    content: "🍔 ";
+}
+
+
+/*::first-letter & ::first-line*/
+.divFirstLetter :nth-child(1)::first-letter {
+    font-size: 2rem;
+    color: red;
+    font-weight: bold;
+}
+
+.divFirstLetter :nth-child(2)::first-line {
+    text-decoration: underline blue;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-transform: capitalize;
+}
+
+
+/*::marker & ::selection*/
+.ulMarker ::marker {
+    content: "🎅";
+    font-size: 0.8rem;
+}
+
+.ulMarker ::selection {
+    background-color: red;
+    color: white;
+}
+
+
+/*::placeholder & ::file-selector-button*/
+.inputPlaceholder::placeholder {
+    color: green;
+    opacity: 0.7;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.inputFileSelector::file-selector-button {
+    color: whitesmoke;
+    background-color: blue;
+}
