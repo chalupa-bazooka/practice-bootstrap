@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BS5 Dropdown (TutRep)</title>
+
+    <style>
+        /*this is for anchors to not get covered by the fixed header*/
+        .h3anchor {
+            position: relative;
+            margin-top: 3rem;
+        }
+
+        .h3anchor span {
+            position: absolute;
+            top: -70px;
+        }
+
+        /*this is for main not to get covered by the fixed header*/
+        main {
+            padding-top: 60px;
+        }
+    </style>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!--BS5 font icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <!--Font Awesome icons-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!--nav-->
+    <nav class="navbar navbar-expand-md navbar-dark bg-success fixed-top">
+        <div class="container-fluid">
+
+            <!--brand-->
+            <a href="#" class="navbar-brand">TUTREP |</a>
+
+            <!--toggler-->
+            <button type="button" class="navbar-toggler" data-bs-tggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!--nav-item (collapsable)-->
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav">
+                    <a href="#headerDropdown" class="nav-item nav-link">Dropdown</a>
+                    <a href="#" class="nav-item nav-link">Link 2</a>
+                    <a href="#" class="nav-item nav-link">Link 3</a>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+
+    <!--main-->
+    <main class="container m-3">
+        <h1>Dropdown</h1>
+        <p class="lead"><i>The advanced section of Tutrep's BS5 guide.</i></p>
+        <div class="row mt-3">
+
+            <!--dropdown-->
+            <div class="col-6">
+                <h3 class="h3anchor">Dropdown<span id="headerDropdown"></span></h3>
+
+                <!--link-->
+                <div class="dropdown">
+                    <!--the toggle-->
+                    <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">Dropdown</a>
+
+                    <!--the items-->
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item">Item 1</a>
+                        <a href="#" class="dropdown-item">Item 2</a>
+                        <a href="#" class="dropdown-item">Item 3</a>
+                    </div>
+                </div>
+
+                <!--button-->
+                <div class="dropdown">
+
+                    <!--the button-->
+                    <button href="#" class="dropdown-toggle btn btn-primary" data-bs-toggle="dropdown">Dropdown</button>
+
+                    <!--the items-->
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item">Item 1</a>
+                        <a href="#" class="dropdown-item">Item 2</a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">Item 3</a>
+                    </div>
+                    </button>
+
+                </div>
+
+                <!--dropup, dropstart, dropend-->
+                <div class="btn-group">
+                    <div class="btn-group dropup">
+                        <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Dropup</button>
+                        <div class="dropdown-menu">
+                            <a href="#">Item 1</a>
+                            <a href="#">Item 2</a>
+                        </div>
+                    </div>
+
+                    <div class="btn-group dropend">
+                        <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Dropend</button>
+                        <div class="dropdown-menu">
+                            <a href="#">Item 1</a>
+                            <a href="#">Item 2</a>
+                        </div>
+                    </div>
+
+                    <div class="btn-group dropstart">
+                        <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Dropstart</button>
+                        <div class="dropdown-menu">
+                            <a href="#">Item 1</a>
+                            <a href="#">Item 2</a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+    </main>
+
+
+    <!--footer-->
+    <div class="container">
+        <footer class="py-3 my-4">
+
+            <!--links-->
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item"><a href="#headerDropdown" class="nav-link px-2">Dropdown</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2">Link 2</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2">Link 3</a></li>
+            </ul>
+
+            <!--copyright-->
+            <p class="text-center text-muted" style="font-size: 0.8rem">© 2023 Company</p>
+
+        </footer>
+    </div>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
